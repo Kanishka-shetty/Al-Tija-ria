@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Awards</title>
+    <title>Chairmans Message</title>
 </head>
 
 <body style="background-color: black;">
@@ -21,39 +21,95 @@
             .then(data => document.getElementById('navbar-container').innerHTML = data);
     </script>
 
-        <img src="/assets/awards-banner.jpg" alt="awards-banner" class="img-fluid" style="width: 100%; height: auto;">
-        <nav aria-label="breadcrumb" class="mb-4">
-            <ol class="breadcrumb text-center d-flex justify-content-center flex-wrap overflow-auto">
-              <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-              <li class="breadcrumb-item"><a href="about-us.html">About Al Tijaria</a></li>
-              <li class="breadcrumb-item active text-white" aria-current="page">Awards</li>
-            </ol>
-          </nav>
+    <img src="/assets/awards-banner.jpg" alt="awards-banner" class="img-fluid" style="width: 100%; height: auto;">
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb text-center d-flex justify-content-center flex-wrap overflow-auto">
+            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="about-us.html">About Al Tijaria</a></li>
+            <li class="breadcrumb-item active text-white" aria-current="page">Awards</li>
+        </ol>
+    </nav>
 
+   <!-- <div class="container-fluid position-relative vh-100 mt-5">
 
+        <div class="row" style="height: 60%;"> 
+            <div class="col-5 bg-primary" style="margin-left: 100px;"></div>
+        </div>
+     
+        <h1 class="position-absolute top-0 start-50 translate-middle mt-3 text-white">
+            Awards And Certificates
+        </h1>
+        
+        <div class="container position-absolute top-50 start-50 translate-middle bg-dark text-white p-4 rounded shadow"
+            style="width: 60%; min-height: 50vh; margin-top: -180px;">
+            <div class="row g-3 align-items-center">
+                
+                <div class="col-md-7">
+                    <p><strong class="fs-4 text-primary">“The Excellence in Governance” Award</strong><br>
+                        Al Tijaria has won the First Position in “The Excellence in Governance” award competing against 50 other companies.
+                    </p>
+                    <p>
+                        The award was handed out in the GCC Governance Conference that was held under the patronage of his Highness the Prime Minister Sheikh Jaber Al Mubarak Al Hamad Al Sabah on 3–5 November 2014.
+                    </p>
+                    <p><strong class="fs-4 text-primary">“The Best Corporate Governance – Kuwait 2013 and 2014” Award</strong><br>
+                        Al Tijaria has won the award for the “The Best Corporate Governance – Kuwait”, for 2 consecutive years for 2013 and 2014. This was awarded to Al Tijaria by the ‘World Finance’ – which is based in the UK.
+                    </p>
+                </div>
 
-        <div class="container-fluid position-relative vh-100">
-            <div class="row h-50">
-              <div class="col-5 bg-primary" style="margin-left: 100px;"></div>
+                <div class="col-md-5 d-flex align-items-center justify-content-center">
+                    <img src="/assets/awards-2.jpg" alt="Award" class="img-fluid rounded" style="max-height: 250px;">
+                </div>
             </div>
-                <h1 class="position-absolute top-0 start-50 translate-middle mt-5 text-white" >
-              Awards And Certificates
-            </h1>
-          </div>
+        </div>
+    </div> -->
 
-          <div class="position-absolute top-50 start-50 translate-middle-x w-75 bg-dark text-white p-4 rounded shadow">
-            <p><strong>“The Excellence in Governance” Award</strong><br>
-              Al Tijaria has won the First Position in “The Excellence in Governance” award competing against 50 other companies.
-            </p>
-            <p>
-              The award was handed out in the GCC Governance Conference that was held under the patronage of his Highness the Prime Minister Sheikh Jaber Al Mubarak Al Hamad Al Sabah on 3–5 November 2014.
-            </p>
-            <p><strong>“The Best Corporate Governance – Kuwait 2013 and 2014” Award</strong><br>
-              Al Tijaria has won the award for the “The Best Corporate Governance – Kuwait”, for 2 consecutive years for 2013 and 2014. This was awarded to Al Tijaria by the ‘World Finance’ – which is based in the UK.
-            </p>
+
+    <div class="container-fluid bg-primary text-white py-5">
+        <div class="container">
+          <h1 class="text-center mb-4">Awards And Certificates</h1>
+          <div class="row bg-dark text-white rounded shadow p-4">
+            
+            <!-- Text section -->
+            <div class="col-12 col-md-7 mb-4 mb-md-0">
+              <p><strong class="fs-4 text-primary">“The Excellence in Governance” Award</strong><br>
+                Al Tijaria has won the First Position in “The Excellence in Governance” award competing against 50 other companies.
+              </p>
+              <p>
+                The award was handed out in the GCC Governance Conference that was held under the patronage of his Highness the Prime Minister Sheikh Jaber Al Mubarak Al Hamad Al Sabah on 3–5 November 2014.
+              </p>
+              <p><strong class="fs-4 text-primary">“The Best Corporate Governance – Kuwait 2013 and 2014” Award</strong><br>
+                Al Tijaria has won the award for the “The Best Corporate Governance – Kuwait”, for 2 consecutive years for 2013 and 2014. This was awarded to Al Tijaria by the ‘World Finance’ – which is based in the UK.
+              </p>
+            </div>
+      
+            <!-- Image section -->
+            <div class="col-12 col-md-5 d-flex align-items-center justify-content-center">
+              <img src="/assets/awards-2.jpg" alt="Award" class="img-fluid rounded" style="max-height: 250px;">
+            </div>
           </div>
         </div>
-
+      </div>
+      
+    
+    
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
+    
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
+    
+    
+    
     <!-- Footer -->
     <div id="footer-container"></div>
     <script>

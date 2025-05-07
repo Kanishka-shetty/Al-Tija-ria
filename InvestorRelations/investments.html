@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Our Investments</title>
+</head>
+
+<body style="background-color: black;">
+
+    <div id="navbar-container"></div>
+    <script>
+
+      fetch('../AboutAlTijaria/navbar.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('navbar-container').innerHTML = data;
+        });
+    </script>
+
+<!-- Content -->
+<img src="/assets/investmentbanner.jpg" alt="investments-banner" class="img-fluid" style="width: 100%; height: auto;">
+<nav aria-label="breadcrumb" class="mb-4 mt-3">
+    <ol class="breadcrumb text-center d-flex justify-content-center flex-wrap overflow-auto">
+        <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="/InvestorRelations/investments.html">Investor Relations</a></li>
+        <li class="breadcrumb-item active text-white" aria-current="page">Why Al Tijaria?</li>
+    </ol>
+</nav>
+
+<div class="container my-4">
+
+    <!-- Row for Parallel Cards -->
+    <div class="row justify-content-center g-4">
+
+        <!-- Associates Card -->
+        <div class="col-12 col-md-6">
+            <div class="card bg-dark text-white h-100" style="border-radius: 12px; overflow: hidden;">
+                <h2 class="card-header bg-primary text-center mb-0">Associates</h2>
+                <div class="card-body">
+                    <!-- Row 1: Two images -->
+                    <div class="row justify-content-center g-3">
+                        <div class="col-6 col-md-3">
+                            <a href="/InvestorRelations/associates/associates1.html">
+                                <img src="/assets/associates1.jpg" alt="Associates 1" class="img-fluid rounded-3">
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="/InvestorRelations/associates/associates2.html" alt="Associates 2" class="img-fluid rounded-3">
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Two images -->
+                    <div class="row justify-content-center g-3 mt-3">
+                        <div class="col-6 col-md-3">
+                            <img src="/associates/associates3.html" alt="Associates 3" class="img-fluid rounded-3">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="/assets/associates4.jpg" alt="Associates 4" class="img-fluid rounded-3">
+                        </div>
+                    </div>
+
+                    <!-- Row 3: One image centered -->
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-6 col-md-3">
+                            <img src="/assets/associates5.jpg" alt="Associates 5" class="img-fluid rounded-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subsidiaries Card -->
+        <div class="col-12 col-md-6">
+            <div class="card bg-dark text-white h-100" style="border-radius: 12px; overflow: hidden;">
+                <h2 class="card-header bg-primary text-center mb-0">Subsidiaries</h2>
+                <div class="card-body">
+                    <div class="row justify-content-center g-3">
+                        <div class="col-6 col-md-3 ">
+                            <img src="/assets/subsidiaries.jpg" alt="Subsidiary 1" class="img-fluid rounded-3" style="max-width: 150px; height: 150px;">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="/assets/subsidiaries2.jpg" alt="Subsidiary 2" class="img-fluid rounded-3" style="max-width: 150px; height: 150px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<h1 class="d-flex justify-content-center text-info fs-2 fw-bold">Why Al-Tijaria?</h1>
+
+
+
+    <div id="footer-container"></div>
+    <script>
+              fetch('../AboutAlTijaria/footer.html')
+            .then(res => res.text())
+            .then(data => {
+              document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
